@@ -1,0 +1,37 @@
+﻿  1-1.cpp
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.36.32532\include\tuple(144,47): warning C4244: '초기화 중': '_Ty'에서 '_Ty'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+          with
+          [
+              _Ty=double
+          ]
+          and
+          [
+              _Ty=float
+          ]
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.36.32532\include\tuple(236,102): message : 컴파일되는 함수 템플릿 인스턴스화 'std::_Tuple_val<_This>::_Tuple_val<_Ty>(_Other &&)'에 대한 참조를 확인하세요.
+          with
+          [
+              _This=float,
+              _Ty=double,
+              _Other=double
+          ]
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.36.32532\include\tuple(236,18): message : 컴파일되는 함수 템플릿 인스턴스화 'std::tuple<float,long>::tuple<std::_Exact_args_t,_Ty,int,0>(_Tag,_This2 &&,int &&)'에 대한 참조를 확인하세요.
+          with
+          [
+              _Ty=double,
+              _Tag=std::_Exact_args_t,
+              _This2=double
+          ]
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.36.32532\include\tuple(282,16): message : 컴파일되는 함수 템플릿 인스턴스화 'std::tuple<int,float,long>::tuple<std::_Exact_args_t,_Ty,double,_Ty,0>(_Tag,_This2 &&,double &&,_Ty &&)'에 대한 참조를 확인하세요.
+          with
+          [
+              _Ty=int,
+              _Tag=std::_Exact_args_t,
+              _This2=int
+          ]
+C:\Users\kgm09\source\repos\cppstl_1\chapter01\1-1.cpp(129,33): message : 컴파일되는 함수 템플릿 인스턴스화 'std::tuple<int,float,long>::tuple<int,double,int,0>(_This2 &&,double &&,int &&) noexcept'에 대한 참조를 확인하세요.
+          with
+          [
+              _This2=int
+          ]
+C:\Users\kgm09\source\repos\cppstl_1\chapter01\1-1.cpp(186): error C4716: 'divide_remainder': 값을 반환해야 합니다.
