@@ -29,9 +29,9 @@ C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.36.3253
               _Tag=std::_Exact_args_t,
               _This2=int
           ]
-C:\Users\kgm09\source\repos\cppstl_1\chapter01\1-1.cpp(129,33): message : 컴파일되는 함수 템플릿 인스턴스화 'std::tuple<int,float,long>::tuple<int,double,int,0>(_This2 &&,double &&,int &&) noexcept'에 대한 참조를 확인하세요.
+C:\Users\kgm09\OneDrive\문서\GitHub\C-STL\cppstl_1\chapter01\1-1.cpp(115,33): message : 컴파일되는 함수 템플릿 인스턴스화 'std::tuple<int,float,long>::tuple<int,double,int,0>(_This2 &&,double &&,int &&) noexcept'에 대한 참조를 확인하세요.
           with
           [
               _This2=int
           ]
-C:\Users\kgm09\source\repos\cppstl_1\chapter01\1-1.cpp(186): error C4716: 'divide_remainder': 값을 반환해야 합니다.
+  chapter01.vcxproj -> C:\Users\kgm09\OneDrive\문서\GitHub\C-STL\cppstl_1\x64\Debug\chapter01.exe

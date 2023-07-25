@@ -74,11 +74,12 @@ void print_charcount_cpp11(const T& map, char c) {
 	else {
 
 		cout << "There are" << 0 << " " << c << " characters" << "\n";
-		// itr이 유효하며, 접근할 수 있지만 사용이 가능하다.
+		// itr이 유효하며, 접근할 수 있지만 사용이 가능하다.(엾지만)
 
 	}
 	// 여전히 itr에 접근이 가능하다.
 }
+
 
 // C++17
 
@@ -86,7 +87,7 @@ void print_charcount_cpp11(const T& map, char c) {
 template <typename T>
 void print_charcount_cpp17(const T& map, char c)
 {
-	if (const auto itr(map.find()); itr != map.end()) {
+	if (const auto itr(map.find(c)); itr != map.end()) {
 
 		
 		std::cout << "There are " << itr->second << " " << c << " characters." << "\n";
@@ -112,6 +113,9 @@ int main() {
 
 
 	//
+	// C++ 17: 이전
+	// 
+	// 
 	// switch 구문에도 동일하게 적용이 된다.
 	// 
 	// {
@@ -123,6 +127,20 @@ int main() {
 	// }
 	// // 여전히 var에 접근이 가능하다.
 	//}
+	// 
+	// 
+	// C++17:
+	// 
+	// switch(auto var(init_value);var){
+	// case 1: ...
+	// case 2: ...
+	// ...
+	//}
+	// 
+	// // 더 이상 바에 접근할 수 없다.
+	//
+
+
 
 
 	{

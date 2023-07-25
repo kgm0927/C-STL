@@ -47,27 +47,10 @@ pair<int, int> divide_remainder(int dividend, int divisor) {
 	return make_pair(ans,rest);
 }
 
-
-int main() {
-	const auto result(divide_remainder(16, 3));
-	cout << "16/3 is" << result.first << "with a remainder of" << result.second << '\n';
-
-}*/
+*/
 
 
 
-//
-//
-// 
-// 앞의 코드와 달리 이제는 더욱 읽기 쉬운 이름으로 표현해서 개별 변수에 각각의 값을 할당할 수 있다.
-//
-//
-
-/*
-int main() {
-	auto [fraction, remainder] = divide_remainder(16, 3);
-	cout << "16/3 is" << fraction << "with a remainder of" << remainder << "\n";
-}*/
 
 //
 // 구조체 형태의 바인딩은 std::tuple과도 함께 동작한다. 온라인 주식 정보를 구하는 예제 함수이다.
@@ -92,11 +75,10 @@ struct employee {
 };
 
 // 이제 구조체 형태의 바인딩을 사용해 해당 멤버 변수에 접근할 수 있다. 다음과 같은 벡터가 있을 경우
-// 반복문에서도 처리할 수 있다.
-/*for (const auto &[id,name,role,salary]:employees)
-{
-	cout << "Name: " << name << "Role: " << role << "Salary: " << salary << "\n";
-}*/
+// 반복문에서도 처리할 수 있다.(main 함수 제일 마지막 참고.)
+/*
+
+*/
 
 //
 
@@ -210,6 +192,7 @@ std::pair<int, int> divide_remainder(int dividend, int divisor)
 
 int main()
 {
+
     { // old school way
         int fraction, remainder;
         const bool success{ divide_remainder(16, 3, fraction, remainder) };
@@ -218,10 +201,14 @@ int main()
         }
     }
 
+
+
     { // C++11 way
         const auto result(divide_remainder(16, 3));
         std::cout << "16 / 3 is " << result.first << " with a remainder of " << result.second << "\n";
     }
+
+
 
     { // C++11, ignoring fraction part of result
         int remainder;
@@ -229,10 +216,14 @@ int main()
         std::cout << "16 % 5 is " << remainder << "\n";
     }
 
+
+
     { // C++17, use structured bindings
         auto [fraction, remainder] = divide_remainder(16, 3);
         std::cout << "16 / 3 is " << fraction << " with a remainder of " << remainder << "\n";
     }
+
+
 
     { // C++17, decompose a tuple into individual vars
         std::tuple<int, float, long> tup {1, 2.0, 3};
@@ -240,18 +231,29 @@ int main()
         std::cout << a << ", " << b << ", " << c << "\n";
     }
 
+
+
     { // C++17, use structured binding in for-loop
 
-        std::map<std::string, size_t> animal_population {
-            {"humans", 7000000000},
-            { "chickens", 17863376000 },
-            { "camels",   24246291 },
-            { "sheep",    1086881528 }
-                /* … */
-        };
+
+      
+
+
 
         for (const auto& [species, count] : animal_population) {
             std::cout << "There are " << count << " " << species << " on this planet.\n";
         }
     }
+
+
+    vector<employee> employees{
+        {20202020,"김근육","role",500}
+    
+    };
+
+    for (const auto& [id, name, role, salary] : employees) {
+        cout << "Name: " << name << "Role: " << role << "Salary: " << salary << '\n';
+
+    }
+
 }

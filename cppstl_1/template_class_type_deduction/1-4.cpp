@@ -42,6 +42,9 @@ class my_wrapper {
 
 public:
 	explicit my_wrapper(T1 t1_,T2 t2_,T3 t3_): t1{t1_}, t2{t2_}, t3{t3_}
+		// explicit 키워드는 자신이 원하지 않은 형변환이 일어나지 않도록 제한하는 키워드이다.
+
+
 	{}
 };
 
@@ -126,10 +129,16 @@ sum(Ts&& ... ts)-> sum<std::common_type_t<Ts...>>;
 
 
 int main() {
-	sum s{1u,2.0,3,4.0f};
-	sum string_num{ std::string{"abc"},"def" };
+	my_wrapper wrap(123, 4.56, std::string{"foo"});
 
-	std::cout << s.value << '\n' << string_num.value << "\n";
+	std::pair  pair(123, std::string{"string"});
+	std::tuple tuple(123, 4.56, std::string{"string"});
+
+	sum s{ 1u, 2.0, 3, 4.0f };
+	sum string_sum{ std::string{"abc"}, "def" };
+
+	std::cout << s.value << '\n'
+		<< string_sum.value << '\n';
 }
 
 //
