@@ -22,8 +22,8 @@
 // 이에 아주 간단한 사용 예제로 std::pair와 std::tuple 인스턴스 생성이 있다.
 // 이 둘은 한 번에 특수화 및 인스턴스로 만들 수 있다.
 /*
-std::pair my_pair(123, "abc");					// std::pair <int, const char*>
-std::tuple my_tuple(123, 12, 3, "abc");			// std::tuple <int, double, const char*>
+	std::pair my_pair(123, "abc");					// std::pair <int, const char*>
+	std::tuple my_tuple(123, 12, 3, "abc");			// std::tuple <int, double, const char*>
 */
 
 //

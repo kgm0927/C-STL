@@ -76,9 +76,11 @@ auto y = { 1,2 };	// y는 std::initializer_list<int>
 //
 
 
-
-//auto var_name ={one_element}
-//one_element와 같은 자료형이 되도록 var_name을 추론한다.
+//
+//
+// 
+// auto var_name ={one_element}
+// one_element와 같은 자료형이 되도록 var_name을 추론한다.
 //
 // 
 // auto var_name {element1, element2, ...}; 유효하지 않으며 컴파일 되지 않는다.

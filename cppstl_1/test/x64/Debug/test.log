@@ -1,0 +1,9 @@
+﻿  test.cpp
+C:\Users\kgm09\OneDrive\문서\GitHub\C-STL\cppstl_1\test\test.cpp(12,19): error C3779: 'matchs': 'auto'을(를) 반환하는 함수를 정의되기 전에 사용할 수 없습니다.
+C:\Users\kgm09\OneDrive\문서\GitHub\C-STL\cppstl_1\test\test.cpp(7,6): message : 'matchs' 선언을 참조하십시오.
+C:\Users\kgm09\OneDrive\문서\GitHub\C-STL\cppstl_1\test\test.cpp(13,19): error C3779: 'matchs': 'auto'을(를) 반환하는 함수를 정의되기 전에 사용할 수 없습니다.
+C:\Users\kgm09\OneDrive\문서\GitHub\C-STL\cppstl_1\test\test.cpp(7,6): message : 'matchs' 선언을 참조하십시오.
+C:\Users\kgm09\OneDrive\문서\GitHub\C-STL\cppstl_1\test\test.cpp(16,19): error C3779: 'matchs': 'auto'을(를) 반환하는 함수를 정의되기 전에 사용할 수 없습니다.
+C:\Users\kgm09\OneDrive\문서\GitHub\C-STL\cppstl_1\test\test.cpp(7,6): message : 'matchs' 선언을 참조하십시오.
+C:\Users\kgm09\OneDrive\문서\GitHub\C-STL\cppstl_1\test\test.cpp(17,19): error C3779: 'matchs': 'auto'을(를) 반환하는 함수를 정의되기 전에 사용할 수 없습니다.
+C:\Users\kgm09\OneDrive\문서\GitHub\C-STL\cppstl_1\test\test.cpp(7,6): message : 'matchs' 선언을 참조하십시오.
